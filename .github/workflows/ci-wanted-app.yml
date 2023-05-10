@@ -1,12 +1,13 @@
 name: CI-wanted-app
 
+# //언제 깃헙액션즈를 on 시킬꺼냐.
 on:
   push:
     branches:
-      - 6-deploy-github-actions
+      - 6-deploy
     paths:
       - 'apps/wanted/**'
-
+# on이 되면 jobs를 실행시키는거다
 jobs:
   test:
     runs-on: ubuntu-latest
